@@ -22,7 +22,7 @@ public class TabliceLosowe {
         int min=1_000_000;
         int max=0;
         for(int e:tab){
-            if(e>max)max=e; else if(e<min)e=min;
+            if(e>max)max=e; else if(e<min) min=e;
 
         }
         System.out.println("min "+min+" max "+max);
