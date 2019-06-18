@@ -12,6 +12,11 @@ class Main {
        // saveFile(tablos.pobierz(), "liczby_losowe.txt");
         int[] tab =loadData("liczby_losowe.txt");
         System.out.println(tab[99]);
+        ZadaniaAlgorytm zad=new ZadaniaAlgorytm();
+        System.out.println("nieparzyste "+zad.nieparzyste(tab));
+        System.out.println("parzyste "+zad.parzyste(tab));
+
+
     }
 
     public static void saveFile(int[] tab, String plik) {
@@ -29,7 +34,8 @@ class Main {
         Scanner sc = null;
         try {
             sc = new Scanner(new File(plik));
-            for (int i = 0; i < 100; i++) dane[i] = sc.nextInt();
+           // while(sc.hasNextInt())
+           for (int i = 0; i < 100; i++) dane[i] = sc.nextInt();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
