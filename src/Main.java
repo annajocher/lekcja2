@@ -9,7 +9,9 @@ class Main {
     public static void main(String[] args) {
         TabliceLosowe tablos = new TabliceLosowe(100);
         tablos.znajdzMaxMin();
-        saveFile(tablos.pobierz(), "liczby_losowe.txt");
+       // saveFile(tablos.pobierz(), "liczby_losowe.txt");
+        int[] tab =loadData("liczby_losowe.txt");
+        System.out.println(tab[99]);
     }
 
     public static void saveFile(int[] tab, String plik) {
