@@ -15,6 +15,9 @@ class Main {
         ZadaniaAlgorytm zad=new ZadaniaAlgorytm();
         System.out.println("nieparzyste "+zad.nieparzyste(tab));
         System.out.println("parzyste "+zad.parzyste(tab));
+        System.out.println("niepodzielne przez 2,3,5 "+zad.niepodzielne(tab));
+        System.out.println("potegi 3 "+zad.potegi3(tab));
+        System.out.println("suma wszystkich cyfr "+zad.sumaCyfr(tab));
 
 
     }
