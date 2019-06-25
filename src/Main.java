@@ -7,6 +7,31 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
+
+       KolkoKrzyzyk gra = new KolkoKrzyzyk();
+       gra.graj();
+       gra.drukuj();
+
+        /*
+        int[] tab =loadData("liczby_losowe.txt");
+        Pierwsze p = new Pierwsze();
+        int licznik=0;
+        for(int a :tab){
+            if(p.czyPierwsza(a)) licznik++;
+        }
+        System.out.println("pierwszych "+licznik);
+        */
+
+        /*
+        Pierwsze p = new Pierwsze();
+        Scanner sc = new Scanner(System.in);
+        int liczba=sc.nextInt();
+        System.out.println("Liczba "+liczba);
+        p.wypiszPierwsze(liczba);
+        */
+
+
+        /*
         TabliceLosowe tablos = new TabliceLosowe(100);
         tablos.znajdzMaxMin();
        // saveFile(tablos.pobierz(), "liczby_losowe.txt");
@@ -18,7 +43,7 @@ class Main {
         System.out.println("niepodzielne przez 2,3,5 "+zad.niepodzielne(tab));
         System.out.println("potegi 3 "+zad.potegi3(tab));
         System.out.println("suma wszystkich cyfr "+zad.sumaCyfr(tab));
-
+*/
 
     }
 
