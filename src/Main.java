@@ -7,10 +7,32 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
+        Pesel pesel=new Pesel(12345678901L);
+        Pesel pesel2=new Pesel("71052203932");
+        Pesel pesel3=new Pesel("76061401543");
 
+        assert (pesel.isMale() == false);
+        assert (pesel2.isMale() == true);
+
+        assert (pesel2.isCorrect() == true);
+        assert (pesel3.isCorrect() == false);
+
+        System.out.println("pesel "+pesel.pesel +" "+pesel.isMale());
+        System.out.println("pesel2 "+pesel2.pesel+" "+pesel2.isMale());
+
+        System.out.println("data pesel2 "+pesel2.born());
+
+        System.out.println("data pesel2 "+pesel2.toString());
+        System.out.println("data pesel3 "+pesel3.toString());
+
+
+
+
+        /*
        KolkoKrzyzyk gra = new KolkoKrzyzyk();
        gra.graj();
        gra.drukuj();
+       */
 
         /*
         int[] tab =loadData("liczby_losowe.txt");
