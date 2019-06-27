@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
+
+        Point3D p3D=new Point3D(1,1,1);
+
+        /*
         Pesel pesel=new Pesel(12345678901L);
         Pesel pesel2=new Pesel("71052203932");
         Pesel pesel3=new Pesel("76061401543");
@@ -27,7 +31,7 @@ class Main {
 
         System.out.printf("napis %s, liczba %d, z przecinkiem %.2f","napis", 2, 2.22);
 
-
+*/
 
         /*
        KolkoKrzyzyk gra = new KolkoKrzyzyk();
