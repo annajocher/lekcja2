@@ -25,6 +25,7 @@ class Main {
         System.out.println("data pesel2 "+pesel2.toString());
         System.out.println("data pesel3 "+pesel3.toString());
 
+        System.out.printf("napis %s, liczba %d, z przecinkiem %.2f","napis", 2, 2.22);
 
 
 
