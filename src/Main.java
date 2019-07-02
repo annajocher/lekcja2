@@ -3,12 +3,28 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Scanner;
+import java.util.*;
 
 class Main {
     public static void main(String[] args) {
 
-        Point3D p3D=new Point3D(1,1,1);
+        Map<String,Integer> uczniowie =new HashMap<>();
+        uczniowie.put("Jan",15);
+        uczniowie.put("Ola",15);
+        uczniowie.put("Marek",13);
+        uczniowie.put("Janusz",25);
+
+        Set<String> keys=uczniowie.keySet();
+        for(String imie: keys){
+            System.out.println(imie + " ma "+uczniowie.get(imie)+" lat");
+        }
+        Collection<Integer> values=uczniowie.values();
+        for(Integer wiek: values){
+            System.out.println(wiek);
+        }
+
+
+        //Point3D p3D=new Point3D(1,1,1);
 
         /*
         Pesel pesel=new Pesel(12345678901L);
